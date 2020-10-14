@@ -5,7 +5,7 @@
 
 /*----------------------------------------------------------
  * A simple and cross-platform library 
- * for interfacing TM1637 LED drive control special cirquit.
+ * for interfacing TM1637 four-digit seven-segment indicator.
  *---------------------------------------------------------*/
 
 #ifndef _TM1637_H
@@ -78,9 +78,10 @@ void tm1637_display_dec(int16_t number, bool dots);
 
 /* Display some user content(uint8_t[4]) on the segments.
  * Example:
- *  uint8_t content[4] = {TM16_y, TM16_o | TM16_DOTS, TM16_U, TM16_r}; // yo:Ur
+ *  const uint8_t content[4] = 
+ *  	{TM16_y, TM16_o | TM16_DOTS, TM16_U, TM16_r}; // yo:Ur
  *  tm1637_display_content(content); */
-void tm1637_display_content(uint8_t content[4]);
+void tm1637_display_content(const uint8_t content[4]);
 
 /* Set the display state on(1) or off(0). */
 void tm1637_set_state(bool state);

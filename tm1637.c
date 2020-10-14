@@ -158,7 +158,7 @@ void tm1637_display_dec(int16_t number, bool dots)
     write_bytes(bytes, sizeof(bytes));
 }
 
-void tm1637_display_content(uint8_t content[4])
+void tm1637_display_content(const uint8_t content[4])
 {
     uint_fast8_t i;
 
