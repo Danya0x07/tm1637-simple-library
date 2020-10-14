@@ -1,0 +1,20 @@
+{
+    "name": "tm1637-simple-library",
+    "keywords": "tm1637, tm16",
+    "description": "Simple and cross-platform TM1637 library. Only for local install because some files are to be edited by user.",
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/Danya0x07/tm1637-simple-library.git"
+    },
+    "authors":
+    {
+        "name": "Daniel Efimenko",
+        "email": "dlef0xf8@gmail.com",
+        "maintainer": true
+    },
+    "version": "1.0.0",
+    "frameworks": "*",
+    "platforms": "*",
+    "license": "MIT"
+}
