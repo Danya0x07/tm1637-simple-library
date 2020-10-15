@@ -77,7 +77,8 @@ static inline void transmission_check_ack(void)
     _clk_low();
     _delay_us(5);
     _din_low();
-    while (_din_is_high()) {}
+    _us_timer_set(0);
+    while (_din_is_high() && _us_timer_get() < 10) {}
     _din_high();
     _clk_high();
     _delay_us(2);

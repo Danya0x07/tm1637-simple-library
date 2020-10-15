@@ -5,7 +5,7 @@
 
 /*----------------------------------------------------------
  * A simple and cross-platform library 
- * for interfacing TM1637 four-digit seven-segment indicator.
+ * for interfacing TM1637 four-digit seven-segment indicators.
  *---------------------------------------------------------*/
 
 #ifndef _TM1637_H
