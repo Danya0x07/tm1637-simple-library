@@ -26,7 +26,8 @@
  * For the 2nd (counting from left, [12:34]) digit of the display
  * the X bit controls the dots.
  */
-enum tm16xx_symbol {    // XGFEDCBA
+enum tm16xx_symbol {    
+            // XGFEDCBA
     TM16_0 = 0b00111111,
     TM16_1 = 0b00000110,
     TM16_2 = 0b01011011,
@@ -47,6 +48,7 @@ enum tm16xx_symbol {    // XGFEDCBA
     TM16_h = 0b01110100,
     TM16_I = 0b00110000,
     TM16_L = 0b00111000,
+    TM16_n = 0b01010100,
     TM16_o = 0b01011100,
     TM16_P = 0b01110011,
     TM16_q = 0b01100111,
